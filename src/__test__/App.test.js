@@ -1,5 +1,5 @@
 import React from 'react';
-import { render, screen, getAllByTestId } from '@testing-library/react';
+import { render, screen, fireEvent } from '@testing-library/react';
 import App from '../App';
 
 beforeEach(() => {
@@ -17,4 +17,12 @@ test('renders 26 letter buttons', () => {
   buttons.forEach((button) => {
     expect(button).toBeInTheDocument();
   });
+});
+
+test('buttons are disabled on click', () => {
+  const buttons = screen.getAllByTestId('letter');
+  const firstBtn = buttons[0];
+  expect(firstBtn).toBeInTheDocument();
+  fireEvent.click(firstBtn);
+  expect(firstBtn.classList.contains('disabled')).toBe(true);
 });
