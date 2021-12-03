@@ -1,0 +1,68 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.h-screen {
+  height: 100vh;
+}
+
+/* Text Color */
+.text-white {
+  color: white;
+}
+
+/* Background Color */
+.bg-red {
+  background-color: red;
+}
+.bg-pink {
+  background-color: pink;
+}
+.bg-blue {
+  background-color: blue;
+}
+.bg-green-transparent {
+  background: rgba(24, 212, 118, 0.514);
+}
+
+/* Positions */
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.sticky {
+  position: sticky;
+}
+
+.bottom-0 {
+  bottom: 0;
+}
+
+/* Margin */
+.mb-4 {
+  margin-bottom: 4rem;
+}
+
+/* Padding */
+.px-3 {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.py-10 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
