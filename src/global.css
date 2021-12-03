@@ -3,8 +3,18 @@
   margin: 0;
 }
 
+/* Width */
+.w-2 {
+  width: 2rem;
+}
+
 .w-full {
   width: 100%;
+}
+
+/* Height */
+.h-2 {
+  height: 2rem;
 }
 
 .h-full {
@@ -65,4 +75,22 @@
 .py-10 {
   padding-top: 3rem;
   padding-bottom: 3rem;
+}
+
+.letter-section {
+  display: grid;
+  grid-template-columns: repeat(13, auto);
+  justify-content: center;
+  align-items: center;
+}
+
+.letter-button {
+  width: 40px;
+  height: 40px;
+  /* border: black 2px; */
+  /* border: inset black 2px; */
+}
+
+.letter-button:hover {
+  background-color: rgb(255, 166, 0);
 }
