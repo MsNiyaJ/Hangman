@@ -24,5 +24,5 @@ test('buttons are disabled on click', () => {
   const firstBtn = buttons[0];
   expect(firstBtn).toBeInTheDocument();
   fireEvent.click(firstBtn);
-  expect(firstBtn.classList.contains('disabled')).toBe(true);
+  expect(firstBtn.hasAttribute('disabled')).toBe(true);
 });

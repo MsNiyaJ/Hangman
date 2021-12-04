@@ -6,7 +6,7 @@ function App() {
   return (
     <div
       style={{
-        backgroundImage: `url(${process.env.PUBLIC_URL + '/outside_bg.png'})`,
+        backgroundImage: `url(${'/outside_bg.png'})`,
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover',
       }}
