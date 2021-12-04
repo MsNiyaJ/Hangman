@@ -27,10 +27,10 @@ const WordSection = () => {
         {/* Loop through each character and display a line */}
         {charArr.map((char, index) => {
           return char === ' ' ? (
-            <div className="px-1"></div>
+            <div key={index} className="px-1"></div>
           ) : (
             <div key={index}>
-              <div className="letter">{char}</div>
+              <div className="invisible">{char}</div>
               <hr className="w-full"></hr>
             </div>
           );
