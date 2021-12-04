@@ -1,6 +1,7 @@
 import './global.css';
 
 import LettersSection from './letters/LettersSection';
+import WordSection from './WordSection';
 
 function App() {
   return (
@@ -12,8 +13,8 @@ function App() {
       }}
       className="w-full h-screen"
     >
-      <h1>Hangman</h1>
-
+      <h1 className="game-title">Hangman</h1>
+      <WordSection />
       <LettersSection />
     </div>
   );

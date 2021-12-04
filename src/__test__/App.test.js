@@ -26,3 +26,15 @@ test('buttons are disabled on click', () => {
   fireEvent.click(firstBtn);
   expect(firstBtn.hasAttribute('disabled')).toBe(true);
 });
+
+test('renders the correct category', () => {
+  const category = screen.getByTestId('category');
+  expect(category).toBeInTheDocument();
+});
+
+test('renders the word area', () => {
+  const word = screen.getByTestId('word');
+  expect(word).toBeInTheDocument();
+});
+
+test('letter is revealed on button click', () => {});

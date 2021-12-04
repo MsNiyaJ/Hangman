@@ -1,6 +1,7 @@
 * {
   padding: 0;
   margin: 0;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 /* Width */
@@ -67,6 +68,16 @@
 }
 
 /* Padding */
+.px-1 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.px-2 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
 .px-3 {
   padding-left: 3rem;
   padding-right: 3rem;
@@ -77,6 +88,40 @@
   padding-bottom: 3rem;
 }
 
+.game-title {
+  padding-top: 10px;
+  font-size: 23px;
+}
+
+.word-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 2rem;
+  height: 60vh;
+}
+
+.category {
+  font-size: x-large;
+  font-weight: 600;
+  margin-top: 10rem;
+}
+
+.word {
+  display: flex;
+  font-size: 2rem;
+  gap: 20px;
+}
+
+.underline {
+  background-color: black;
+  color: black;
+}
+
+.letter {
+  opacity: 0;
+}
+
 .letter-section {
   display: grid;
   grid-template-columns: repeat(13, auto);
@@ -85,8 +130,10 @@
 }
 
 .letter-button {
-  width: 40px;
-  height: 40px;
+  width: 20px;
+  height: 20px;
+  font-weight: 600;
+  font-size: x-large;
   /* border: black 2px; */
   /* border: inset black 2px; */
 }
@@ -101,4 +148,29 @@
 
 .disabled:hover {
   background-color: rgba(255, 255, 255, 0.596);
+}
+
+/* Large Mobile Device */
+@media screen and (min-width: 425px) {
+  .letter-button {
+    width: 30px;
+    height: 30px;
+  }
+  .word {
+    font-size: 3.5rem;
+  }
+  .game-title {
+    font-size: 30px;
+  }
+}
+
+/* Tablet Devices */
+@media screen and (min-width: 768px) {
+  .letter-button {
+    width: 50px;
+    height: 50px;
+  }
+  .word {
+    font-size: 5rem;
+  }
 }
